@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username <span class="required">*</span></label>
+            <input type="text" id="username">
+            <small class="error" id="usernameError"></small>
+
+            <label for="password">Password <span class="required">*</span></label>
+            <input type="password" id="password">
+            <small class="error" id="passwordError"></small>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Success Popup -->
+    <div id="successPopup" class="success-popup">
+        <div class="popup-content">
+            <button class="close-btn" id="closePopup">×</button>
+            <p id="popupMessage">Login Successful...!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
